@@ -1,0 +1,23 @@
+package polymorphism;
+
+public class Triangle extends Shape {
+	    double base, height, side1, side2, side3;
+
+	    public Triangle(String color, double base, double height,
+	                    double side1, double side2, double side3) {
+	        super(color);
+	        this.base = base;
+	        this.height = height;
+	        this.side1 = side1;
+	        this.side2 = side2;
+	        this.side3 = side3;
+	    }
+	    
+	    public double area() {
+	        return 0.5 * base * height;
+	    }
+
+	    public double perimeter() {
+	        return side1 + side2 + side3;
+	    }
+}
